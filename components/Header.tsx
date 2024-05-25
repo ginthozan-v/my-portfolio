@@ -8,19 +8,19 @@ function Header() {
   return (
     <div className="flex items-center justify-between w-full mt-8 lg:mt-10">
       <div className="flex items-center gap-1">
-        <div className="flex border-gray-300 border rounded-full backdrop-blur-2xl p-0.5">
-          <div className="hidden md:flex items-center gap-2 pl-6">
+        <div className="flex border-gray-300 dark:border-neutral-800 border rounded-full backdrop-blur-2xl p-0.5">
+          <div className="hidden md:flex items-center gap-2 p-4">
             <EnvelopeIcon className="w-4 h-4" />
             <Link href={'#'} className="m-0 text-xs">
               ginthozanv@gmail.com
             </Link>
           </div>
-          <button className="border-gray-300 rounded-full backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 border bg-gray-200 py-3 text-xs md:text-sm px-2 w-20 md:w-24 md:ml-4">
-            Copy
+          <button className="md:hidden border-gray-300 rounded-full backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 border bg-gray-200 py-3 text-xs md:text-sm px-2 w-20 md:w-24 md:ml-4">
+            Email
           </button>
         </div>
 
-        <div className="p-0.5 border-gray-300 border rounded-full">
+        <div className="p-0.5 border-gray-300 border rounded-full dark:border-neutral-800">
           <button className="border-gray-300 rounded-full backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 border bg-gray-200 py-3 text-xs md:text-sm px-2 w-20 md:w-24">
             CV
           </button>

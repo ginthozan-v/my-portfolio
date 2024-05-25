@@ -13,7 +13,7 @@ const Banner = () => {
           className="w-full h-full object-cover rounded-full"
         />
       </div>
-      <h1 className="mt-2">Hi! I'm Ginthozan</h1>
+      <h1 className="mt-2">Hi! I&apos;m Ginthozan</h1>
       <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold">
         Frontend Developer
       </h2>

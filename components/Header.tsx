@@ -6,8 +6,10 @@ function Header() {
   return (
     <div className="py-5 flex items-center justify-between uppercase">
       <Link href={'#'}>
-        <EnvelopeIcon />
-        gmail
+        <span className='flex items-center gap-1'>
+          <EnvelopeIcon className="w-5 h-5" />
+          gmail
+        </span>
       </Link>
       <div className="flex items-center divide-x">
         <Link href={'#'} className="px-2">

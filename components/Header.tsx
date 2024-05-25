@@ -11,7 +11,7 @@ function Header() {
         <div className="flex border-gray-300 dark:border-neutral-800 border rounded-full backdrop-blur-2xl p-0.5">
           <div className="hidden md:flex items-center gap-2 p-4">
             <EnvelopeIcon className="w-4 h-4" />
-            <Link href={'#'} className="m-0 text-xs">
+            <Link href="mailto:ginthozanv@gmail.com" className="m-0 text-xs">
               ginthozanv@gmail.com
             </Link>
           </div>

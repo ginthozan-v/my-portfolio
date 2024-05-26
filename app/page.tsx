@@ -8,6 +8,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger, ScrollToPlugin } from 'gsap/all';
 import TechStack from '@/components/TechStack';
+import Panel from '@/components/Panel';
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -30,14 +31,15 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="max-w-screen-xl lg:mx-auto flex flex-col min-h-screen mx-5">
+    <main className="max-w-screen-xl lg:mx-auto flex flex-col h-screen mx-5">
       <Header />
       <Banner />
-      <div className="grid grid-cols-3 gap-2 my-10 h-screen items-start max-w-5xl mx-auto">
+      <Panel />
+      {/* <div className="grid grid-cols-3 gap-2 my-10 h-screen items-start max-w-5xl mx-auto">
         <About />
         <Education />
         <TechStack/>
-      </div>
+      </div> */}
     </main>
   );
 }

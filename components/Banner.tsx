@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <section
       id="banner"
-      className="flex-1 min-h-screen h-full flex flex-col items-center justify-center overflow-hidden"
+      className="fixed w-full left-0 flex-1 min-h-screen h-full flex flex-col items-center justify-center overflow-hidden"
     >
       <div className="relative border-gray-300 dark:border-neutral-800 border rounded-full p-0.5 w-28 h-28 lg:w-32 lg:h-32">
         <Image

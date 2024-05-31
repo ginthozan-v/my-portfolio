@@ -1,11 +1,8 @@
 'use client';
-import { motion } from 'framer-motion';
 
 const About = () => {
   return (
     <div
-    //   animate={{ y: -50, opacity: 1 }}
-    //   transition={{ ease: 'easeIn', duration: 1, delay: 1 }}
       id="about"
       className="border border-gray-300 p-0.5 rounded-3xl"
     >

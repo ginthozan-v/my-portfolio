@@ -1,45 +1,16 @@
 'use client';
 
-import About from '@/components/About';
 import Banner from '@/components/Banner';
-import Education from '@/components/Education';
+import Experience from '@/components/Experience';
 import Header from '@/components/Header';
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger, ScrollToPlugin } from 'gsap/all';
-import TechStack from '@/components/TechStack';
-import Panel from '@/components/Panel';
-
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 export default function Home() {
-  const panelsRef = useRef([]);
-
-  useEffect(() => {
-    const panels = panelsRef.current;
-
-    panels.forEach((panel, i) => {
-      if (panel) {
-        const trigger = ScrollTrigger.create({
-          trigger: panel,
-          start: 'top top',
-          pin: true,
-          pinSpacing: false,
-        });
-      }
-    });
-  }, []);
 
   return (
-    <main className="max-w-screen-xl lg:mx-auto flex flex-col h-screen mx-5">
+    <main className="layout">
       <Header />
       <Banner />
-      <Panel />
-      {/* <div className="grid grid-cols-3 gap-2 my-10 h-screen items-start max-w-5xl mx-auto">
-        <About />
-        <Education />
-        <TechStack/>
-      </div> */}
+      <Experience/>
     </main>
   );
 }

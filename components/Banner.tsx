@@ -34,8 +34,10 @@ const Banner = () => {
           }}
           className="text-center"
         >
-          <h1 className="mt-2">Hi! I&apos;m Ginthozan</h1>
-          <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold">
+          <h1 className="mt-2 text-gray-400 uppercase font-thin tracking-wider">
+            Ginthozan Varnakulasingam
+          </h1>
+          <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 uppercase">
             Frontend Developer
           </h2>
           <p className="text-sm mt-1">React / Next.js</p>
@@ -44,13 +46,12 @@ const Banner = () => {
           style={{ opacity: opacity1, transform: translateY1 }}
           className="text-center absolute top-0 left-0 mx-auto"
         >
-          <h1 className="mt-2 text-lg">Ginthozan Varnakulasingam</h1>
+          <h1 className="mt-2 uppercase text-gray-300 tracking-[10px] font-thin">
+            About me
+          </h1>
 
-          <p className="text-sm mt-1">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit amet
-            eligendi beatae tempora? Inventore adipisci cumque officiis porro
-            enim, deleniti, alias perferendis veniam quod possimus, dignissimos
-            excepturi quas vero dolore?
+          <p className="text-2xl mt-2">
+            Hi I'm Ginthozan and I am passionate about Frontend Development and I enjoy working developing user interfaces.
           </p>
         </motion.div>
       </div>

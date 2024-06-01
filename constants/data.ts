@@ -61,6 +61,11 @@ export const techStack = [
     title: 'tailwindcss',
     icon: '/assets/icons/tech-stack/tailwindcss-original.svg',
   },
+  {
+    id: 7,
+    title: 'shopify',
+    icon: '/assets/icons/tech-stack/shopify.svg',
+  },
 ];
 
 export const experience = [

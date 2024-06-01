@@ -38,7 +38,7 @@ function Header() {
                     <span className="ml-2">/</span>
                   )}
                 </p>
-                <div className="md:hidden p-1 border-gray-300 border rounded-full">
+                <div className="md:hidden p-1 border-gray-300 bg-white border rounded-full">
                   <Image
                     src={value.icon}
                     width={320}

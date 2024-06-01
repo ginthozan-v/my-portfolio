@@ -9,8 +9,6 @@ const Banner = () => {
 
   const opacity1 = useTransform(scrollY, [0, 100], [0, 1]);
   const opacity2 = useTransform(scrollY, [0, 100], [1, 0]);
-  const translateY1 = useTransform(scrollY, [0, 100], [0, 150]);
-  const translateY2 = useTransform(scrollY, [0, 100], [0, 150]);
 
   return (
     <section
@@ -29,8 +27,7 @@ const Banner = () => {
       <div className="relative">
         <motion.div
           style={{
-            opacity: opacity2,
-            transform: translateY2,
+            opacity: opacity2
           }}
           className="text-center"
         >
@@ -43,7 +40,7 @@ const Banner = () => {
           <p className="text-sm mt-1">React / Next.js</p>
         </motion.div>
         <motion.div
-          style={{ opacity: opacity1, transform: translateY1 }}
+          style={{ opacity: opacity1 }}
           className="text-center absolute top-0 left-0 mx-auto"
         >
           <h1 className="mt-2 uppercase text-gray-300 tracking-[10px] font-thin">
@@ -51,7 +48,7 @@ const Banner = () => {
           </h1>
 
           <p className="text-2xl mt-2">
-            Hi I'm Ginthozan and I am passionate about Frontend Development and I enjoy working developing user interfaces.
+            Hi I&apos;m Ginthozan and I am passionate about Frontend Development and I enjoy working developing user interfaces.
           </p>
         </motion.div>
       </div>

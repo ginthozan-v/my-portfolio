@@ -71,6 +71,6 @@ export const techStack = [
 export const experience = [
   {id: 0, years: '2019 - 2020', company: 'Appz Makers'},
   {id: 1, years: '2020 Feb - 2021 Oct', company: 'Intersoft International Solutions'},
-  {id: 0, years: '2022 Mar - 2023 Jul', company: 'Boolean labs'},
-  {id: 0, years: '2021 Oct - Present', company: 'Flatline Agency'},
+  {id: 2, years: '2022 Mar - 2023 Jul', company: 'Boolean labs'},
+  {id: 3, years: '2021 Oct - Present', company: 'Flatline Agency'},
 ]

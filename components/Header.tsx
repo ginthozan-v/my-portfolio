@@ -1,8 +1,8 @@
-import { header } from '@/constants/data';
-import { EnvelopeIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import Image from 'next/image';
-const LinkedIn = '/assets/icons/linkedin.svg';
+
+import { EnvelopeIcon } from '@heroicons/react/24/outline';
+import { header } from '@/constants/data';
 
 function Header() {
   return (

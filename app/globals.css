@@ -7,6 +7,16 @@
     text-wrap: balance;
   }
 
+  body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgb(var(--background-end-rgb))
+      )
+      rgb(var(--background-start-rgb));
+  }
+
   .layout {
     @apply max-w-screen-xl xl:mx-auto flex flex-col h-screen mx-5 lg:mx-10
   }

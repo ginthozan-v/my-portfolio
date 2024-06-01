@@ -69,8 +69,36 @@ export const techStack = [
 ];
 
 export const experience = [
-  {id: 0, years: '2019 - 2020', company: 'Appz Makers'},
-  {id: 1, years: '2020 Feb - 2021 Oct', company: 'Intersoft International Solutions'},
-  {id: 2, years: '2022 Mar - 2023 Jul', company: 'Boolean labs'},
-  {id: 3, years: '2021 Oct - Present', company: 'Flatline Agency'},
-]
+  {
+    id: 0,
+    years: '2019 - 2020',
+    company: 'Appz Makers',
+    location: 'Colombo, Sri Lanka',
+    role: 'Web Developer (Freelance)',
+    techs: ['Laravel', 'PHP', 'HTML', 'CSS', 'Javascript', 'MySQL', 'Bootstrap', 'Git'],
+  },
+  {
+    id: 1,
+    years: '2020 Feb - 2021 Oct',
+    company: 'Intersoft International Solutions',
+    location: 'Jaffna, Sri Lanka',
+    role: 'Fullstack Developer',
+    techs: ['ASP .NET', 'MVC', 'C#', 'Javascript', 'JQuery', 'Ajax', 'Bootstrap', 'SQL Server', 'TFS'],
+  },
+  {
+    id: 2,
+    years: '2022 Mar - 2023 Jul',
+    company: 'Boolean labs',
+    location: 'Colombo, Sri Lanka',
+    role: 'Frontend Developer (Remote)',
+    techs: ['Next.js', 'Typescript', 'Tailwindcss', 'Github', 'Monorepo', 'Agile'],
+  },
+  {
+    id: 3,
+    years: '2021 Oct - Present',
+    company: 'Flatline Agency',
+    location: 'Amsterdam, Netherlands',
+    role: 'Frontend Developer',
+    techs: ['Shopify', 'Next.js', 'HTML', 'CSS', 'Tailwindcss', 'Github'],
+  },
+];

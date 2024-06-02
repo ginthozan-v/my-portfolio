@@ -7,7 +7,7 @@
     text-wrap: balance;
   }
 
-  :root {
+ /* :root {
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
@@ -19,17 +19,18 @@
       --background-start-rgb: 0, 0, 0;
       --background-end-rgb: 0, 0, 0;
     }
-  }
+  } */
   
   body {
     color: rgb(var(--foreground-rgb));
-    background: linear-gradient(
+    /* background: linear-gradient(
         to bottom,
         transparent,
         rgb(var(--background-end-rgb))
       )
-      rgb(var(--background-start-rgb));
-  }
+      rgb(var(--background-start-rgb)); */
+      @apply dark:bg-gray-950
+  } 
 
   .layout {
     @apply max-w-screen-xl xl:mx-auto flex flex-col h-screen mx-5 lg:mx-10

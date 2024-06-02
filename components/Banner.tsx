@@ -1,14 +1,33 @@
 'use client';
 import Image from 'next/image';
+import gsap from 'gsap';
+
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/all';
 
 import { techStack } from '@/constants/data';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Banner = () => {
   const { scrollY } = useScroll();
 
   const opacity1 = useTransform(scrollY, [0, 100], [0, 1]);
   const opacity2 = useTransform(scrollY, [0, 100], [1, 0]);
+
+  useGSAP(() => {
+    gsap.to('.g_grow', {
+      scale: 1.3,
+      ease: 'power1',
+      scrollTrigger: {
+        trigger: '.g_grow',
+        toggleActions: 'restart reverse restart reverse',
+        start: 'top 30%',
+        scrub: 5.5,
+      },
+    });
+  }, []);
 
   return (
     <section
@@ -21,20 +40,20 @@ const Banner = () => {
           width={320}
           height={320}
           alt="profile"
-          className="w-full h-full object-cover rounded-full"
+          className="w-full h-full object-cover rounded-full g_grow scale-100"
         />
       </div>
       <div className="relative">
         <motion.div
           style={{
-            opacity: opacity2
+            opacity: opacity2,
           }}
           className="text-center"
         >
-          <h1 className="mt-2 text-gray-400 uppercase font-thin tracking-wider">
+          <h1 className="mt-2 text-gray-400  uppercase font-thin tracking-wider">
             Ginthozan Varnakulasingam
           </h1>
-          <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 uppercase">
+          <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-gray-200 uppercase">
             Frontend Developer
           </h2>
           <p className="text-sm mt-1">React / Next.js</p>
@@ -48,7 +67,8 @@ const Banner = () => {
           </h1>
 
           <p className="text-2xl mt-2">
-            Hi I&apos;m Ginthozan and I am passionate about Frontend Development and I enjoy working developing user interfaces.
+            Hi I&apos;m Ginthozan and I am passionate about Frontend Development
+            and I enjoy working developing user interfaces.
           </p>
         </motion.div>
       </div>

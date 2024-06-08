@@ -8,18 +8,18 @@ import { experience } from '@/constants/data';
 gsap.registerPlugin(ScrollTrigger);
 
 const Experience = () => {
-  useGSAP(() => {
-    gsap.to('.g_exp', {
-      y: 3,
-      opacity: 1,
-      ease: "power2.in",
-      scrollTrigger: {
-        trigger: '.g_exp',
-        toggleActions: 'restart reverse',
-        start: 'top 100%',
-      },
-    });
-  }, []);
+  // useGSAP(() => {
+  //   gsap.to('.g_exp', {
+  //     y: 3,
+  //     opacity: 1,
+  //     ease: "power2.in",
+  //     scrollTrigger: {
+  //       trigger: '.g_exp',
+  //       toggleActions: 'restart reverse',
+  //       start: 'top 100%',
+  //     },
+  //   });
+  // }, []);
 
   return (
     <section className="min-h-screen max-w-4xl mx-auto w-full py-10">
@@ -30,7 +30,7 @@ const Experience = () => {
         {experience.toReversed().map((exp) => (
           <div
             key={exp.id}
-            className="grid md:grid-cols-3 align-top md:gap-20 py-10 border-b border-gray-300 g_exp opacity-0 translate-y-20"
+            className="grid md:grid-cols-3 align-top md:gap-20 py-10 border-b border-gray-300 g_exp opacity-1"
           >
             <div className="uppercase tracking-widest text-gray-400 text-sm flex flex-col gap-1">
               <span>{exp.years}</span>

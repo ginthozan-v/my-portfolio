@@ -6,7 +6,7 @@ import { header } from '@/constants/data';
 
 function Header() {
   return (
-    <div className="fixed top-0 left-0 w-full mt-8 lg:mt-10 z-10">
+    <div className="fixed top-0 left-0 w-full pt-8 lg:pt-10 z-10 pb-2 bg-gradient-to-b from-white">
       <div className="max-w-screen-xl mx-5 lg:mx-auto flex items-center justify-between">
         <div className="flex items-center gap-1">
           <Link href="mailto:ginthozanv@gmail.com" className="m-0 text-xs">

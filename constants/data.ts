@@ -74,7 +74,7 @@ export const experience = [
     years: '2019 - 2020',
     company: 'Appz Makers',
     location: 'Colombo, Sri Lanka',
-    role: 'Web Developer (Freelance)',
+    role: 'Web Developer & Designer (Freelance)',
     techs: [
       'Laravel',
       'PHP',
@@ -84,6 +84,15 @@ export const experience = [
       'MySQL',
       'Bootstrap',
       'Git',
+    ],
+    description:
+      'Worked on multiple projects including Static Websites, Web applications and Graphic designing',
+    responsibilities: [
+      'Worked closely with the CEO and Stackeholders',
+      'Invloded in requirement gathering, project planning and development',
+      'Involved in deploying the application to a shared host.',
+      'Involved in social media marketing.',
+      'Designed art works, broachers, flyers for small business',
     ],
   },
   {
@@ -96,6 +105,7 @@ export const experience = [
       'ASP .NET',
       'MVC',
       'C#',
+      'Xamarin',
       'Javascript',
       'JQuery',
       'Ajax',
@@ -103,7 +113,14 @@ export const experience = [
       'SQL Server',
       'TFS',
     ],
-    description: 'ss'
+    description: 'Collaborated on Business Dispatch Logistics system software.',
+    responsibilities: [
+      'Maintaining the current logistic software',
+      'Developed new features to the system for example inventory ordering when the stock quantity is low',
+      'Involved in QA and bug fixes',
+      'Helped improving their frontend user interface',
+      'Developed a new web app with modern user interface to report generation and displaying statistics using Chart.js',
+    ],
   },
   {
     id: 2,
@@ -120,7 +137,7 @@ export const experience = [
       'Agile',
     ],
     description:
-    "MYT is a comprehensive portal for Mauritius Telecom's wide range of services, offering solutions for home, mobile, business, and financial needs",
+      "MYT is a comprehensive portal for Mauritius Telecom's wide range of services, offering solutions for home, mobile, business, and financial needs",
     responsibilities: [
       'Led the development of significant portions of the CMS site and various components for the customer-facing site.',
       'Translated Figma designs into responsive React components.',
@@ -131,8 +148,8 @@ export const experience = [
       'Customized WSO2 Authentication UI to match the web portal theme.',
       'Adhered to agile practices and methodologies.',
       'Managed and tracked tasks using Jira, including handling tickets and maintaining documentation on Confluence.',
-      'Mentored and guided junior developers.'
-    ]
+      'Mentored and guided junior developers.',
+    ],
   },
   {
     id: 3,
@@ -140,7 +157,15 @@ export const experience = [
     company: 'Flatline Agency',
     location: 'Amsterdam, Netherlands',
     role: 'Frontend Developer (Remote)',
-    techs: ['Shopify', 'Next.js', 'HTML', 'CSS', 'Tailwindcss', 'Strapi', 'Github'],
+    techs: [
+      'Shopify',
+      'Next.js',
+      'HTML',
+      'CSS',
+      'Tailwindcss',
+      'Strapi',
+      'Github',
+    ],
     description:
       'Contributed to various projects involving SaaS applications, Shopify eCommerce stores, and NFT portfolios.',
     responsibilities: [
@@ -158,7 +183,17 @@ export const experience = [
     company: 'Flatline Agency',
     location: 'Amsterdam, Netherlands',
     role: 'Senior Frontend Developer',
-    techs: ['Shopify', 'Liquid', 'HTML', 'CSS', 'JavaScript', 'Storefront API','REST API', 'GraphQL', 'Github'],
+    techs: [
+      'Shopify',
+      'Liquid',
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'Storefront API',
+      'REST API',
+      'GraphQL',
+      'Github',
+    ],
     description:
       'Contributing to various Shopify eCommerce stores like Oger, Noord Code.',
     responsibilities: [

@@ -103,6 +103,7 @@ export const experience = [
       'SQL Server',
       'TFS',
     ],
+    description: 'ss'
   },
   {
     id: 2,
@@ -119,26 +120,55 @@ export const experience = [
       'Agile',
     ],
     description:
-    "MYT is a comprehensive portal for Mauritius Telecom's wide range of services, offering solutions for home, mobile, business, and financial needs"
+    "MYT is a comprehensive portal for Mauritius Telecom's wide range of services, offering solutions for home, mobile, business, and financial needs",
+    responsibilities: [
+      'Led the development of significant portions of the CMS site and various components for the customer-facing site.',
+      'Translated Figma designs into responsive React components.',
+      'Developed and implemented features based on user stories from confluence.',
+      'Created authentication routes.',
+      'Designed and deployed a developer-friendly solution for dynamic form creation to accelerate development.',
+      'Integrated REST APIs.',
+      'Customized WSO2 Authentication UI to match the web portal theme.',
+      'Adhered to agile practices and methodologies.',
+      'Managed and tracked tasks using Jira, including handling tickets and maintaining documentation on Confluence.',
+      'Mentored and guided junior developers.'
+    ]
   },
   {
     id: 3,
-    years: '2021 Oct - Present',
+    years: '2021 Oct - 2023 Aug',
     company: 'Flatline Agency',
     location: 'Amsterdam, Netherlands',
-    role: 'Senior Frontend Developer',
-    techs: ['Shopify', 'Next.js', 'HTML', 'CSS', 'Tailwindcss', 'Github'],
+    role: 'Frontend Developer (Remote)',
+    techs: ['Shopify', 'Next.js', 'HTML', 'CSS', 'Tailwindcss', 'Strapi', 'Github'],
     description:
       'Contributed to various projects involving SaaS applications, Shopify eCommerce stores, and NFT portfolios.',
     responsibilities: [
-      'Translated wireframes into reusable UI components',
+      'Translated wireframes into UI components',
       'Collaborated with cross-functional teams',
       'Fixed bugs on existing projects',
       'Integrated APIs',
+      'Following agile practices',
+      'Mentored junior developers',
+    ],
+  },
+  {
+    id: 4,
+    years: '2023 Sep - Present',
+    company: 'Flatline Agency',
+    location: 'Amsterdam, Netherlands',
+    role: 'Senior Frontend Developer',
+    techs: ['Shopify', 'Liquid', 'HTML', 'CSS', 'JavaScript', 'Storefront API','REST API', 'GraphQL', 'Github'],
+    description:
+      'Contributing to various Shopify eCommerce stores like Oger, Noord Code.',
+    responsibilities: [
       'Worked on leading brand stores in the Netherlands',
-      'Customizing Shopify themes',
+      'Maintaining the current front-end of thir clients stores',
+      'Implementing new features',
+      'Build a new front-end from start to end for new stores',
+      'Translated wireframes into reusable UI components',
+      'Collaborated with cross-functional teams',
       'Optimizing Shopify site performance and page load speed',
-      'Implemented new frontend features on existing Shopify stores',
       'Integrated Shopify storefront APIs',
       'Following agile practices',
       'Mentored junior developers',

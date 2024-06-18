@@ -7,7 +7,7 @@
     text-wrap: balance;
   }
 
- /* :root {
+  /* :root {
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
@@ -20,7 +20,7 @@
       --background-end-rgb: 0, 0, 0;
     }
   } */
-  
+
   body {
     color: rgb(var(--foreground-rgb));
     /* background: linear-gradient(
@@ -29,10 +29,15 @@
         rgb(var(--background-end-rgb))
       )
       rgb(var(--background-start-rgb)); */
-      @apply dark:bg-gray-950
-  } 
+    background-color: #fcfbfb;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  }
 
   .layout {
-    @apply max-w-screen-xl xl:mx-auto flex flex-col h-screen mx-5 lg:mx-10
+    @apply max-w-screen-xl xl:mx-auto flex flex-col h-screen mx-5 lg:mx-10;
+  }
+
+  .button-animation {
+    @apply relative items-center justify-center overflow-hidden hover:shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gray-200 before:duration-500 before:ease-out hover:shadow-gray-200 hover:border-gray-200 hover:before:h-56 hover:before:w-56;
   }
 }

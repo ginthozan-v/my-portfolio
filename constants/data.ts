@@ -94,6 +94,7 @@ export const experience = [
       'Involved in social media marketing.',
       'Designed art works, broachers, flyers for small business',
     ],
+    projects: [],
   },
   {
     id: 1,
@@ -121,6 +122,7 @@ export const experience = [
       'Helped improving their frontend user interface',
       'Developed a new web app with modern user interface to report generation and displaying statistics using Chart.js',
     ],
+    projects: [],
   },
   {
     id: 2,
@@ -150,6 +152,7 @@ export const experience = [
       'Managed and tracked tasks using Jira, including handling tickets and maintaining documentation on Confluence.',
       'Mentored and guided junior developers.',
     ],
+    projects: [],
   },
   {
     id: 3,
@@ -176,6 +179,7 @@ export const experience = [
       'Following agile practices',
       'Mentored junior developers',
     ],
+    projects: [],
   },
   {
     id: 4,
@@ -207,6 +211,24 @@ export const experience = [
       'Integrated Shopify storefront APIs',
       'Following agile practices',
       'Mentored junior developers',
+    ],
+    projects: [
+      {
+        title: 'ESUALS',
+        thumbnail: '/assets/projects/ESUALS.jpeg',
+      },
+      {
+        title: 'SRFace',
+        thumbnail: '/assets/projects/SRFACE.jpeg',
+      },
+      {
+        title: 'Oger',
+        thumbnail: '/assets/projects/OGÉR.jpeg',
+      },
+      {
+        title: 'Balr',
+        thumbnail: '/assets/projects/BALR.jpeg',
+      },
     ],
   },
 ];

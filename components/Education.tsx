@@ -7,7 +7,7 @@ const Education = () => {
         Education
       </h3>
       <div className="mt-10 w-full text-sm text-gray-500">
-        <p className='text-base'>Sri Lank Institute of Information Technology</p>
+        <p className='text-base'>Sri Lanka Institute of Information Technology</p>
         <p className='font-thin'>BSc (Hons) in Information Technology</p>
         <p className='text-xs font-thin italic'>2016 - 2020</p>
       </div>

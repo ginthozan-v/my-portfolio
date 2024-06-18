@@ -6,12 +6,12 @@ import { header } from '@/constants/data';
 
 function Header() {
   return (
-    <div className="fixed top-0 left-0 w-full pt-8 lg:pt-10 z-10 pb-2 bg-gradient-to-b from-white">
+    <div className="fixed top-0 left-0 w-full pt-8 lg:pt-10 z-10 pb-2 backdrop-blur-sm">
       <div className="max-w-screen-xl mx-5 lg:mx-auto flex items-center justify-between">
         <div className="flex items-center gap-1">
           <Link href="mailto:ginthozanv@gmail.com" className="m-0 text-xs">
-            <div className="flex border-gray-300 dark:border-neutral-800 border rounded-full backdrop-blur-2xl p-0.5">
-              <div className="hidden md:flex items-center gap-2 p-4">
+            <div className="flex border-gray-300 border rounded-full backdrop-blur-2xl p-0.5 button-animation">
+              <div className="hidden md:flex items-center gap-2 p-4 relative z-10">
                 <EnvelopeIcon className="w-4 h-4" />
                 ginthozanv@gmail.com
               </div>
@@ -34,11 +34,12 @@ function Header() {
           {header.map((value, index) => (
             <Link key={value.id} href={value.link} className="text-xs">
               <>
-                <p className="hidden md:block">
+                <p className="hidden md:block group">
                   {value.title}{' '}
                   {index !== header.length - 1 && (
                     <span className="ml-2">/</span>
                   )}
+                  <span className="block max-w-0 group-hover:max-w-[50%] transition-all duration-500 h-0.5 bg-gray-900"></span>
                 </p>
                 <div className="md:hidden p-1 border-gray-300 bg-white border rounded-full">
                   <Image

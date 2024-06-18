@@ -6,7 +6,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/all';
 
-import { techStack } from '@/constants/data';
+import { experience, techStack } from '@/constants/data';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -18,13 +18,15 @@ const Banner = () => {
 
   useGSAP(() => {
     gsap.to('.g_grow', {
-      scale: 1.3,
+      scale: 1.5,
+      y: -100,
       ease: 'power1',
       scrollTrigger: {
         trigger: '.g_grow',
         toggleActions: 'restart reverse restart reverse',
         start: 'top 30%',
         scrub: 5.5,
+     
       },
     });
   }, []);
@@ -34,13 +36,13 @@ const Banner = () => {
       id="banner"
       className="relative w-full left-0 flex-1 min-h-screen h-full flex flex-col items-center justify-center overflow-hidden"
     >
-      <div className="border-gray-300 dark:border-neutral-800 border rounded-full p-0.5 w-28 h-28 lg:w-32 lg:h-32">
+      <div className="border-gray-300 dark:border-neutral-800 border rounded-full p-0.5 w-28 h-28 lg:w-32 lg:h-32 g_grow transform translate-y-0 scale-100">
         <Image
           src="/assets/profile.jpeg"
           width={320}
           height={320}
           alt="profile"
-          className="w-full h-full object-cover rounded-full g_grow scale-100"
+          className="w-full h-full object-cover rounded-full "
         />
       </div>
       <div className="relative">
@@ -56,7 +58,12 @@ const Banner = () => {
           <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-gray-200 uppercase">
             Frontend Developer
           </h2>
-          <p className="text-sm mt-1">React / Next.js</p>
+          <div className="flex items-center gap-2 justify-center text-sm italic text-gray-500 font-thin">
+            <p>@{ experience.slice(-1)[0].company }</p>
+            <p>• 2021 - Present</p>
+            <p>• Next.js</p>
+            <p>• Shopify</p>
+          </div>
         </motion.div>
         <motion.div
           style={{ opacity: opacity1 }}

@@ -7,7 +7,7 @@ import { ScrollTrigger } from 'gsap/all';
 import { experience } from '@/constants/data';
 gsap.registerPlugin(ScrollTrigger);
 
-const Experience = () => {
+const Experience = ({ handleOpenModel }: any) => {
   // useGSAP(() => {
   //   gsap.to('.g_exp', {
   //     y: 3,
@@ -55,6 +55,15 @@ const Experience = () => {
                   <li key={i}>{responsibility}</li>
                 ))}
               </ul>
+              {exp.projects.length > 0 && (
+                <button
+                  className="mt-4 uppercase font-semibold group"
+                  onClick={() => handleOpenModel(exp.projects)}
+                >
+                  <span>Projects</span>
+                  <span className="block max-w-0 group-hover:max-w-[50%] transition-all duration-500 h-0.5 bg-gray-900" />
+                </button>
+              )}
             </div>
           </div>
         ))}

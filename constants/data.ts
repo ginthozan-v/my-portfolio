@@ -223,7 +223,7 @@ export const experience = [
       },
       {
         title: 'Oger',
-        thumbnail: '/assets/projects/OGÉR.jpeg',
+        thumbnail: '/assets/projects/OGER.jpeg',
       },
       {
         title: 'Balr',

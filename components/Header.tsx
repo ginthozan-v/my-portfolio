@@ -8,7 +8,7 @@ function Header() {
   return (
     <div className="fixed top-0 left-0 w-full pt-8 lg:pt-10 z-10 pb-2 backdrop-blur-sm">
       <div className="max-w-screen-xl mx-5 lg:mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-1 flex-1">
           <Link href="mailto:ginthozanv@gmail.com" className="m-0 text-xs">
             <div className="flex border-gray-300 border rounded-full backdrop-blur-2xl p-0.5 button-animation">
               <div className="hidden md:flex items-center gap-2 p-4 relative z-10">
@@ -30,7 +30,11 @@ function Header() {
         </Link>
         </div>
 
-        <div className="flex items-center gap-1 md:gap-3">
+        {/* <div className='hidden lg:block text-center flex-1'>
+          <Link href="#" className='font-bold underline'>ginthozan.dev</Link>
+        </div> */}
+
+        <div className="flex items-center gap-1 md:gap-3 flex-1 justify-end">
           {header.map((value, index) => (
             <Link key={value.id} href={value.link} className="text-xs">
               <>

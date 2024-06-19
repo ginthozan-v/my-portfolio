@@ -36,7 +36,7 @@ const Banner = () => {
       id="banner"
       className="relative w-full left-0 flex-1 min-h-screen h-full flex flex-col items-center justify-center overflow-hidden"
     >
-      <div className="border-gray-300 dark:border-neutral-800 border rounded-full p-0.5 w-28 h-28 lg:w-32 lg:h-32 g_grow transform translate-y-0 scale-100">
+      <div className="border-gray-300 border rounded-full p-0.5 w-28 h-28 lg:w-32 lg:h-32 g_grow transform translate-y-0 scale-100">
         <Image
           src="/assets/profile.jpeg"
           width={320}
@@ -55,7 +55,7 @@ const Banner = () => {
           <h1 className="mt-2 text-gray-400  uppercase font-thin tracking-wider">
             Ginthozan Varnakulasingam
           </h1>
-          <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-gray-200 uppercase">
+          <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 uppercase">
             Frontend Developer
           </h2>
           <div className="flex items-center gap-2 justify-center text-xs italic text-gray-500 font-thin">
@@ -97,7 +97,7 @@ const Banner = () => {
               width={720}
               height={720}
               className={`w-5 h-5 ${
-                tech.title === 'next-js' && 'dark:invert w-8 h-8'
+                tech.title === 'next-js' && 'w-8 h-8'
               }`}
             />
           </span>

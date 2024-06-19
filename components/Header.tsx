@@ -15,15 +15,15 @@ function Header() {
                 <EnvelopeIcon className="w-4 h-4" />
                 ginthozanv@gmail.com
               </div>
-              <button className="md:hidden border-gray-300 rounded-full backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 border bg-gray-200 py-3 text-xs md:text-sm px-2 w-20 md:w-24 md:ml-4">
+              <button className="md:hidden border-gray-300 rounded-full backdrop-blur-2xl border bg-gray-200 py-3 text-xs md:text-sm px-2 w-20 md:w-24 md:ml-4">
                 Email
               </button>
             </div>
           </Link>
 
         <Link href="https://drive.google.com/file/d/1Wf6GhEKCCTwFROTWZMZKfVZ8uG8ASSr6/view">
-        <div className="p-0.5 border-gray-300 border rounded-full dark:border-neutral-800">
-            <button className="border-gray-300 rounded-full backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 border bg-gray-200 py-3 text-xs md:text-sm px-2 w-20 md:w-24">
+        <div className="p-0.5 border-gray-300 border rounded-full ">
+            <button className="border-gray-300 rounded-full backdrop-blur-2xl border bg-gray-200 py-3 text-xs md:text-sm px-2 w-20 md:w-24">
               CV
             </button>
           </div>

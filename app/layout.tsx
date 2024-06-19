@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Poppins({ subsets: ["latin"], weight: ['300', '400', '500', '700'] });
 
 export const metadata: Metadata = {
-  title: "Ginthozan -- Frontend Developer",
+  title: "Ginthozan ⎯ Frontend Developer",
   description: "My Portfolio",
 };
 

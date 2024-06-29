@@ -74,8 +74,7 @@ const Banner = () => {
           </h1>
 
           <p className="text-2xl mt-2">
-            Hi I&apos;m Ginthozan and I am passionate about Frontend Development
-            and I enjoy working developing user interfaces.
+            Hi, I&apos;m Ginthozan. I&apos;m passionate about frontend development and love creating engaging user interfaces.
           </p>
         </motion.div>
       </div>

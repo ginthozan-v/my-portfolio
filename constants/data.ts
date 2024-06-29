@@ -161,25 +161,42 @@ export const experience = [
     location: 'Amsterdam, Netherlands',
     role: 'Frontend Developer (Remote)',
     techs: [
-      'Shopify',
       'Next.js',
       'HTML',
       'CSS',
       'Tailwindcss',
+      'Ionic',
       'Strapi',
       'Github',
     ],
     description:
-      'Contributed to various projects involving SaaS applications, Shopify eCommerce stores, and NFT portfolios.',
+      'Contributed to various projects.',
     responsibilities: [
+      'Maintaining the current front-end of ongoing projects and developing new projects from scratch',
       'Translated wireframes into UI components',
+      "REST API Integrations",
       'Collaborated with cross-functional teams',
-      'Fixed bugs on existing projects',
       'Integrated APIs',
       'Following agile practices',
       'Mentored junior developers',
     ],
-    projects: [],
+    projects: [
+      {
+        title: 'MISE',
+        type: 'img',
+        thumbnail: '/assets/projects/MISE.jpeg',
+      },
+      {
+        title: 'LAB 21',
+        type: 'video',
+        thumbnail: '/assets/projects/lab21.mov',
+      },
+      {
+        title: 'YustInfra',
+        type: 'video',
+        thumbnail: '/assets/projects/yustinfra.mov',
+      },
+    ],
   },
   {
     id: 4,
@@ -199,10 +216,10 @@ export const experience = [
       'Github',
     ],
     description:
-      'Contributing to various Shopify eCommerce stores like Oger, Noord Code.',
+      'Contributing to various Shopify eCommerce stores like Oger, Natural High & Noord Code.',
     responsibilities: [
       'Worked on leading brand stores in the Netherlands',
-      'Maintaining the current front-end of thir clients stores',
+      'Maintaining the current front-end of clients stores',
       'Implementing new features',
       'Build a new front-end from start to end for new stores',
       'Translated wireframes into reusable UI components',
@@ -215,18 +232,22 @@ export const experience = [
     projects: [
       {
         title: 'ESUALS',
+        type: 'img',
         thumbnail: '/assets/projects/ESUALS.jpeg',
       },
       {
         title: 'SRFace',
+        type: 'img',
         thumbnail: '/assets/projects/SRFACE.jpeg',
       },
       {
         title: 'Oger',
+        type: 'img',
         thumbnail: '/assets/projects/OGER.jpeg',
       },
       {
         title: 'Balr',
+        type: 'img',
         thumbnail: '/assets/projects/BALR.jpeg',
       },
     ],

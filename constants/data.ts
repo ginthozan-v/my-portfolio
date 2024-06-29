@@ -186,16 +186,16 @@ export const experience = [
         type: 'img',
         thumbnail: '/assets/projects/MISE.jpeg',
       },
-      {
-        title: 'LAB 21',
-        type: 'video',
-        thumbnail: '/assets/projects/lab21.mov',
-      },
-      {
-        title: 'YustInfra',
-        type: 'video',
-        thumbnail: '/assets/projects/yustinfra.mov',
-      },
+      // {
+      //   title: 'LAB 21',
+      //   type: 'video',
+      //   thumbnail: 'https://drive.google.com/file/d/1oK0qaltcAeWGDtU_k4IPDRPMKp49eljq/preview',
+      // },
+      // {
+      //   title: 'YustInfra',
+      //   type: 'video',
+      //   thumbnail: '/assets/projects/yustinfra.mov',
+      // },
     ],
   },
   {

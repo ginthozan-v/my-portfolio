@@ -49,15 +49,29 @@ export default function Modal({
                       className="group snap-center h-52 md:h-[25rem] min-w-[20rem] md:min-w-[40rem] max-w-[20rem] md:max-w-[40rem] rounded-lg border border-black/20 overflow-hidden relative p-4 md:p-6"
                     >
                       {/* <div className="hover:bg-black/60 absolute top-0 left-0 w-full h-full" /> */}
-                      <Image
-                        src={data.thumbnail}
-                        width="1080"
-                        height="1080"
-                        alt="project"
-                        className="w-full h-full object-cover group-hover:scale-105 duration-500 transition-all ease-out rounded-lg"
-                        placeholder="blur"
-                        blurDataURL="https://images.unsplash.com/photo-1557101817-f080b952905d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      />
+                      {data.type === 'img' && (
+                        <Image
+                          src={data.thumbnail}
+                          width="1080"
+                          height="1080"
+                          alt={data.title}
+                          className="w-full h-full object-cover group-hover:scale-105 duration-500 transition-all ease-out rounded-lg"
+                          placeholder="blur"
+                          blurDataURL="https://images.unsplash.com/photo-1557101817-f080b952905d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        />
+                      )}
+
+                      {data.type === 'video' && (
+                        <video
+                          id="video"
+                          playsInline={true}
+                          preload="auto"
+                          autoPlay={true}
+                          muted
+                        >
+                          <source src={data.thumbnail} type="video/mp4" />
+                        </video>
+                      )}
                     </div>
                   ))}
                 </div>

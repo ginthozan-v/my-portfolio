@@ -21,7 +21,7 @@ function Header() {
             </div>
           </Link>
 
-        <Link href="https://drive.google.com/file/d/1QXdFgz6PujSRMfjolv_WFLHJivrolQs_/view">
+        <Link href="https://drive.google.com/file/d/1ngqR0R_QD_HicJazHcFEyl7Amd_KsjyN/view">
         <div className="p-0.5 border-gray-300 border rounded-full ">
             <button className="border-gray-300 rounded-full backdrop-blur-2xl border bg-gray-200 py-3 text-xs md:text-sm px-2 w-20 md:w-24">
               CV

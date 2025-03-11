@@ -63,6 +63,7 @@ const Banner = () => {
             <p>• 2021 - Present</p>
             <p>• Next.js</p>
             <p>• Shopify</p>
+            <p>• Shopify Headless</p>
           </div>
         </motion.div>
         <motion.div

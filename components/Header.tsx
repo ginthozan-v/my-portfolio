@@ -34,7 +34,7 @@ function Header() {
           <Link href="#" className='font-bold underline'>ginthozan.dev</Link>
         </div> */}
 
-        <div className="flex items-center gap-1 md:gap-3 flex-1 justify-end">
+        <div className="flex items-center gap-2 md:gap-3 flex-1 justify-end">
           {header.map((value, index) => (
             <Link key={value.id} href={value.link} className="text-xs">
               <>
@@ -45,12 +45,12 @@ function Header() {
                   )}
                   <span className="block max-w-0 group-hover:max-w-[50%] transition-all duration-500 h-0.5 bg-gray-900"></span>
                 </p>
-                <div className="md:hidden p-1 border-gray-300 bg-white border rounded-full">
+                <div className="md:hidden p-1">
                   <Image
                     src={value.icon}
                     width={320}
                     height={320}
-                    alt="icon"
+                    alt={value.title}
                     className="w-5 h-5"
                   />
                 </div>

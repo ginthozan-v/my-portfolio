@@ -58,12 +58,11 @@ const Banner = () => {
           <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 uppercase">
             Frontend Developer
           </h2>
-          <div className="flex items-center gap-2 justify-center text-xs italic text-gray-500 font-thin">
+          <div className="flex items-center gap-2 justify-center text-xs italic text-gray-500 font-thin flex-wrap">
             <p>@{ experience.slice(-1)[0].company }</p>
             <p>• 2021 - Present</p>
             <p>• Next.js</p>
             <p>• Shopify</p>
-            <p>• Shopify Headless</p>
           </div>
         </motion.div>
         <motion.div

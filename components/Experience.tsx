@@ -22,7 +22,7 @@ const Experience = ({ handleOpenModel }: any) => {
   // }, []);
 
   return (
-    <section className="min-h-screen max-w-4xl mx-auto w-full py-10">
+    <section className="min-h-screen max-w-4xl mx-auto w-full py-10 px-4">
       <h3 className="uppercase tracking-[10px] text-gray-400 font-thin">
         Experience
       </h3>

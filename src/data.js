@@ -3,7 +3,7 @@
 export const profile = {
   name: 'Ginthozan',
   role: 'Frontend & Shopify Developer',
-  tagline: 'I build fast, pixel-perfect interfaces and custom Shopify storefronts — turning design into clean, high-performance code.',
+  tagline: 'I build fast, pixel-perfect storefronts, custom Shopify apps and web interfaces — turning design into clean, high-performance code.',
   location: 'Amsterdam, NL',
   available: 'Available for freelance & full-time',
   email: 'ginthozan@gmail.com',
@@ -26,12 +26,12 @@ export const about = {
   statement:
     'I’m a frontend & Shopify developer who lives in the details between the pixels — the easing curve, the 16ms frame, the way a page should feel before it’s read.',
   paragraphs: [
-    'Six years in, I’ve shipped everything from headless Shopify storefronts to award-chasing brand sites. I bridge design and engineering — turning Figma files into fluid, accessible interfaces with React, GSAP and a healthy respect for performance budgets.',
+    'Six years in, I’ve shipped everything from headless Shopify storefronts and custom Shopify apps to award-chasing brand sites. I bridge design and engineering — turning Figma files into fluid, accessible interfaces with React, GSAP and a healthy respect for performance budgets.',
     'I care about code the next developer will actually enjoy reading, and interfaces that feel as good as they look.',
   ],
   facts: [
     { k: 'based', v: '"Amsterdam, NL"' },
-    { k: 'focus', v: '["Frontend", "Shopify"]' },
+    { k: 'focus', v: '["Frontend", "Shopify", "Apps"]' },
     { k: 'experience', v: '"6+ years"' },
     { k: 'status', v: '"open to work"' },
   ],
@@ -42,7 +42,7 @@ export const about = {
   ],
   toolkit: [
     'React', 'Next.js', 'TypeScript', 'GSAP', 'Three.js / R3F',
-    'WebGL / GLSL', 'Shopify / Liquid', 'Shopify / Headless', 'TailwindCSS', 'Node.js', 'Figma',
+    'Shopify / Liquid', 'Shopify / Headless', 'Shopify Apps', 'Remix', 'Polaris', 'TailwindCSS', 'Node.js', 'Figma',
   ],
 }
 

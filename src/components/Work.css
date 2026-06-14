@@ -1,0 +1,106 @@
+.work {
+  padding: clamp(60px, 10vw, 120px) 0;
+}
+.work-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 40px;
+}
+.work-count {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--fg-dim);
+}
+
+.work-list {
+  border-top: 1px solid var(--line);
+}
+.work-row {
+  display: grid;
+  grid-template-columns: 60px 1.4fr 1fr 40px;
+  align-items: center;
+  gap: 20px;
+  padding: clamp(22px, 3.4vw, 40px) 8px;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+  transition: padding-left 0.5s var(--ease), color 0.4s;
+}
+.work-row::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--fg);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.5s var(--ease);
+  z-index: -1;
+}
+.work-row:hover { padding-left: 28px; color: var(--bg); }
+.work-row:hover::before { transform: scaleY(1); }
+
+.work-row__id {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--accent);
+}
+.work-row:hover .work-row__id { color: var(--bg); }
+.work-row__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  letter-spacing: -0.02em;
+}
+.work-row__cat {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--fg-dim);
+}
+.work-row:hover .work-row__cat { color: var(--bg); }
+.work-row__arrow {
+  font-size: 22px;
+  text-align: right;
+  opacity: 0;
+  transform: translate(-6px, 6px);
+  transition: all 0.4s var(--ease);
+}
+.work-row:hover .work-row__arrow { opacity: 1; transform: translate(0, 0); }
+
+.work-preview {
+  position: fixed;
+  top: 0; left: 0;
+  width: 320px;
+  height: 200px;
+  margin: -100px 0 0 -160px;
+  border-radius: 14px;
+  background: var(--c);
+  color: #0a0a0a;
+  pointer-events: none;
+  z-index: 8000;
+  opacity: 0;
+  scale: 0.85;
+  transition: opacity 0.4s var(--ease), scale 0.4s var(--ease);
+  overflow: hidden;
+}
+.work-preview.is-active { opacity: 1; scale: 1; }
+.work-preview__inner {
+  position: absolute;
+  inset: 0;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.work-preview__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 24px;
+}
+.work-preview__desc { font-size: 14px; line-height: 1.4; }
+
+@media (max-width: 720px) {
+  .work-row { grid-template-columns: 36px 1fr auto; }
+  .work-row__cat { display: none; }
+  .work-preview { display: none; }
+}

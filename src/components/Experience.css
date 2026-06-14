@@ -1,0 +1,112 @@
+.exp {
+  padding: clamp(80px, 12vw, 160px) 0;
+}
+.exp-list {
+  position: relative;
+  margin-top: 60px;
+  padding-left: clamp(20px, 4vw, 60px);
+}
+.exp-line {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: var(--accent);
+  transform-origin: top;
+}
+.exp-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 24px;
+  padding: clamp(28px, 4vw, 48px) 0;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+}
+.exp-row::before {
+  content: '';
+  position: absolute;
+  left: calc(-1 * clamp(20px, 4vw, 60px));
+  top: clamp(34px, 4.6vw, 56px);
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: var(--accent);
+  transform: translateX(-4px);
+}
+.exp-row__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 8px;
+}
+.exp-row__period {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--fg);
+}
+.exp-row__period::before { content: '> '; color: var(--accent); }
+.exp-row__loc {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--fg-dim);
+}
+.exp-row__main h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  letter-spacing: -0.02em;
+}
+.exp-row__company {
+  display: inline-block;
+  font-family: var(--font-mono);
+  color: var(--accent);
+  font-size: 14px;
+  margin: 6px 0 14px;
+}
+.exp-row__summary {
+  color: var(--fg-dim);
+  max-width: 60ch;
+  margin-bottom: 20px;
+}
+
+/* tech stack chips */
+.exp-stack {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+.exp-stack li {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--fg-dim);
+  padding: 5px 10px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+}
+
+/* detail bullets */
+.exp-points {
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  max-width: 64ch;
+}
+.exp-points li {
+  position: relative;
+  padding-left: 22px;
+  color: var(--fg-dim);
+  font-size: 15px;
+  line-height: 1.5;
+}
+.exp-points li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+@media (max-width: 720px) {
+  .exp-row { grid-template-columns: 1fr; gap: 8px; }
+}

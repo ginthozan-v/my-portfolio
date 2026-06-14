@@ -1,0 +1,174 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-scene {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.4;
+}
+.hero-scene canvas { width: 100% !important; height: 100% !important; }
+
+.hero-stage {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-kicker {
+  font-family: var(--font-mono);
+  font-size: clamp(11px, 1.3vw, 14px);
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--fg-dim);
+  margin-bottom: 22px;
+}
+
+/* ── Selection boxes ── */
+.sel {
+  position: relative;
+  border: 1px dashed rgba(244, 244, 240, 0.35);
+  padding: 10px 22px;
+}
+.sel--sub.is-active {
+  border: 1px solid var(--select);
+  background: color-mix(in srgb, var(--select) 9%, transparent);
+}
+.sel__label {
+  position: absolute;
+  top: -11px;
+  left: -1px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--bg);
+  background: #f4f4f0;
+  padding: 2px 8px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+.sel__label--active { background: var(--select); }
+
+/* corner resize handles */
+.handle {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background: var(--bg);
+  border: 1.5px solid var(--select);
+  border-radius: 1px;
+  z-index: 3;
+}
+.sel--title .handle { border-color: #f4f4f0; }
+.handle--tl { top: -5px; left: -5px; }
+.handle--tr { top: -5px; right: -5px; }
+.handle--bl { bottom: -5px; left: -5px; }
+.handle--br { bottom: -5px; right: -5px; }
+
+/* ── Title ── */
+.hero-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.4rem, 9.5vw, 8rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+.hero-line { overflow: hidden; display: block; }
+.hero-line > span { display: block; }
+.hero-line--outline > span {
+  color: transparent;
+  -webkit-text-stroke: 1.5px #f4f4f0;
+}
+
+/* ── Subtitle ── */
+.sel--sub { margin-top: 28px; }
+.hero-sub {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: clamp(1.1rem, 2.4vw, 1.9rem);
+  color: var(--fg);
+  letter-spacing: -0.01em;
+}
+.hero-caret {
+  display: inline-block;
+  width: 2px;
+  height: 1.05em;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  background: var(--select);
+  animation: caret 1s steps(1) infinite;
+}
+@keyframes caret { 50% { opacity: 0; } }
+
+/* ── Ghost (multiplayer) cursors ── */
+.ghost {
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  align-items: flex-start;
+  pointer-events: none;
+}
+.ghost--a { top: 22%; right: 16%; color: var(--accent); }
+.ghost--b { bottom: 20%; left: 18%; color: var(--select); }
+.ghost__tag {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--bg);
+  background: var(--select);
+  padding: 3px 9px;
+  border-radius: 4px;
+  margin: 14px 0 0 -2px;
+  white-space: nowrap;
+}
+.ghost__tag--lime { background: var(--accent); }
+
+/* ── Command pill ── */
+.cmd {
+  position: fixed;
+  right: clamp(20px, 4vw, 40px);
+  bottom: clamp(20px, 4vw, 40px);
+  z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--bg);
+  background: var(--accent);
+  padding: 13px 20px;
+  border-radius: 100px;
+  box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 60%, transparent);
+  transition: transform 0.4s var(--ease), box-shadow 0.4s;
+}
+.cmd:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 40px -10px color-mix(in srgb, var(--accent) 70%, transparent);
+}
+.cmd kbd {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  background: rgba(10, 10, 10, 0.18);
+  padding: 2px 7px;
+  border-radius: 5px;
+}
+
+@media (max-width: 720px) {
+  .ghost { display: none; }
+  .hero-title { font-size: clamp(3rem, 18vw, 6rem); }
+}

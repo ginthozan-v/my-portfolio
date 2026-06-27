@@ -38,7 +38,7 @@ export const about = {
   now: [
     { label: 'Now building', value: 'Headless Shopify storefronts' },
     { label: 'Learning', value: 'WebGL shaders & R3F' },
-    { label: 'Off-screen', value: 'Film photography, espresso' },
+    { label: 'Off-screen', value: 'Video Games, Exploring Countries' },
   ],
   toolkit: [
     'React', 'Next.js', 'TypeScript', 'GSAP', 'Three.js / R3F',

@@ -2,8 +2,9 @@
 
 export const profile = {
   name: 'Ginthozan',
-  role: 'Frontend & Shopify Developer',
-  tagline: 'I build fast, pixel-perfect storefronts, custom Shopify apps and web interfaces — turning design into clean, high-performance code.',
+  fullName: 'Ginthozan Varnakulasingam',
+  role: 'Shopify Full-Stack Expert',
+  tagline: 'I build fast, pixel-perfect Shopify storefronts — Liquid and Headless — with custom apps, checkout extensions and ERP integrations that keep the whole stack in sync.',
   location: 'Amsterdam, NL',
   available: 'Available for freelance & full-time',
   email: 'ginthozan@gmail.com',
@@ -11,28 +12,28 @@ export const profile = {
 }
 
 export const socials = [
-  { label: 'GitHub', url: 'https://github.com' },
-  { label: 'LinkedIn', url: 'https://linkedin.com' },
-  { label: 'Twitter', url: 'https://twitter.com' },
+  { label: 'GitHub', url: 'https://github.com/ginthozan-v' },
+  { label: 'LinkedIn', url: 'https://www.linkedin.com/in/ginthozan-v/' },
+  // { label: 'Twitter', url: 'https://twitter.com' },
 ]
 
 export const stats = [
   { value: '7+', label: 'Years building for the web' },
-  { value: '40+', label: 'Shipped products' },
-  { value: '20+', label: 'Major brands worked with' },
+  { value: '25+', label: 'Shopify stores shipped' },
+  { value: '10+', label: 'Checkout & UI extensions built' },
 ]
 
 export const about = {
   statement:
-    'I’m a frontend & Shopify developer who lives in the details between the pixels — the easing curve, the 16ms frame, the way a page should feel before it’s read.',
+    'I’m a Shopify full-stack expert who lives in the details between the pixels — the easing curve, the 16ms frame, the ERP sync running quietly underneath.',
   paragraphs: [
-    'Six years in, I’ve shipped everything from headless Shopify storefronts and custom Shopify apps to award-chasing brand sites. I bridge design and engineering — turning Figma files into fluid, accessible interfaces with React, GSAP and a healthy respect for performance budgets.',
-    'I care about code the next developer will actually enjoy reading, and interfaces that feel as good as they look.',
+    'Seven years building for the web, the last three and a half specialized in Shopify. I take a pragmatic approach to the ecosystem: Liquid customization for straightforward requirements, Headless (Hydrogen/Next.js) for complex storefronts — whichever gets the job done well. I bridge design and engineering, turning Figma files into fluid, accessible interfaces with React, GSAP and a healthy respect for performance budgets.',
+    'Beyond the storefront, I integrate Shopify with ERP systems (SAP, NetSuite, custom APIs) via Node.js and N8N, build custom checkout and UI extensions, and lead client relationships end-to-end — discovery, technical consulting, scope, and mentoring the team that ships it.',
   ],
   facts: [
     { k: 'based', v: '"Amsterdam, NL"' },
-    { k: 'focus', v: '["Frontend", "Shopify", "Apps"]' },
-    { k: 'experience', v: '"6+ years"' },
+    { k: 'focus', v: '["Shopify", "Headless", "ERP Integration"]' },
+    { k: 'experience', v: '"7+ years"' },
     { k: 'status', v: '"open to work"' },
   ],
   now: [
@@ -41,14 +42,26 @@ export const about = {
     { label: 'Off-screen', value: 'Video Games, Exploring Countries' },
   ],
   toolkit: [
+    'Shopify / Liquid', 'Shopify / Headless', 'Shopify Apps', 'Shopify UI Extensions', 'Hydrogen',
     'React', 'Next.js', 'TypeScript', 'GSAP', 'Three.js / R3F',
-    'Shopify / Liquid', 'Shopify / Headless', 'Shopify Apps', 'Remix', 'Polaris', 'TailwindCSS', 'Node.js', 'Figma',
+    'Node.js', 'GraphQL', 'ERP Integration (SAP, NetSuite)', 'N8N', 'Remix', 'Polaris', 'TailwindCSS', 'Figma',
   ],
 }
 
 export const projects = [
   {
     id: '01',
+    title: 'Connox',
+    category: 'Magento → Shopify',
+    year: '2023',
+    description:
+      'Replatformed from Magento to Shopify with a full frontend redesign and custom middleware support to keep existing systems in sync.',
+    role: 'Frontend / Migration / Middleware',
+    stack: 'Shopify · Liquid · Node middleware',
+    color: '#c77dff',
+  },
+  {
+    id: '02',
     title: 'Oger.nl',
     category: 'Shopify · Theme Rebuild',
     year: '2025',
@@ -59,7 +72,7 @@ export const projects = [
     color: '#d8ff3e',
   },
   {
-    id: '02',
+    id: '03',
     title: 'Handyswap',
     category: 'Shopify · Headless',
     year: '2024',
@@ -70,7 +83,7 @@ export const projects = [
     color: '#ff5e3a',
   },
   {
-    id: '03',
+    id: '04',
     title: 'Dstrezzed',
     category: 'Shopify · Horizon',
     year: '2024',
@@ -79,17 +92,6 @@ export const projects = [
     role: 'Frontend / Theme Development',
     stack: 'Shopify Horizon · Liquid · JS',
     color: '#5e9bff',
-  },
-  {
-    id: '04',
-    title: 'Connox',
-    category: 'Magento → Shopify',
-    year: '2023',
-    description:
-      'Replatformed from Magento to Shopify with a full frontend redesign and custom middleware support to keep existing systems in sync.',
-    role: 'Frontend / Migration / Middleware',
-    stack: 'Shopify · Liquid · Node middleware',
-    color: '#c77dff',
   },
 ]
 
@@ -122,22 +124,23 @@ export const certificates = [
 
 export const experience = [
   {
-    role: 'Senior Frontend Developer',
+    role: 'Senior Shopify Developer',
     company: 'Flatline Agency',
     period: '2023 Sep — Present',
     location: 'Amsterdam, Netherlands',
-    stack: ['Shopify', 'Liquid', 'JavaScript', 'Storefront API', 'GraphQL', 'REST API', 'Vitest', 'GitHub', 'Agile'],
-    summary: 'Building and maintaining Shopify storefronts for leading Dutch brands, including Oger, Natural High and Noord Code.',
+    stack: ['Shopify', 'Liquid', 'Hydrogen', 'Storefront/Admin API', 'GraphQL', 'UI Extensions', 'Node.js', 'N8N', 'SAP', 'NetSuite', 'Agile'],
+    summary: 'Own end-to-end client relationships and lead a development team building and integrating Shopify storefronts for leading Dutch brands, including Oger, Natural High and Noord Code.',
     points: [
-      'Develop new Shopify storefronts end-to-end and ship features across existing themes',
-      'Translate design files into reusable, accessible UI components',
-      'Optimize storefront performance and Core Web Vitals',
-      'Integrate Shopify Storefront and GraphQL APIs',
-      'Mentor junior developers and collaborate cross-functionally in agile teams',
+      'Developed & manage 25+ production Shopify stores across Liquid and Headless approaches',
+      'Built 10+ Shopify UI and Checkout Extensions',
+      'Optimized performance: 35% load time reduction, Lighthouse 45% → 90%',
+      'Integrated Shopify with ERP systems (SAP, NetSuite, custom APIs) using Node.js and N8N',
+      'Lead discovery meetings, technical consulting and scope definition with clients',
+      'Mentor and lead the development team: task assignment, code reviews, QA',
     ],
   },
   {
-    role: 'Senior Frontend Developer (Remote)',
+    role: 'Frontend Engineer, CMS Development (Remote)',
     company: 'Boolean Labs',
     period: '2022 Mar — 2023 Jul',
     location: 'Colombo, Sri Lanka',
@@ -152,41 +155,40 @@ export const experience = [
     ],
   },
   {
-    role: 'Frontend Developer (Remote)',
+    role: 'Frontend Developer (Remote/Freelance)',
     company: 'Flatline Agency',
     period: '2021 Oct — 2023 Aug',
     location: 'Amsterdam, Netherlands',
-    stack: ['Next.js', 'TailwindCSS', 'Ionic', 'Strapi', 'HTML', 'CSS', 'GitHub'],
-    summary: 'Delivered web projects for a range of agency clients.',
+    stack: ['React', 'Next.js', 'TailwindCSS', 'Thirdweb', 'Ionic', 'Strapi', 'GitHub'],
+    summary: 'Built SaaS applications from scratch to production, including a Web3 NFT platform on Thirdweb.',
     points: [
-      'Built new web projects from scratch and maintained existing front-ends',
-      'Translated wireframes into reusable UI components',
-      'Integrated REST APIs within agile, cross-functional teams',
+      'Architected frontends and implemented features across the product lifecycle',
+      'Translated Figma designs into reusable React components',
+      'Notable project: Web3 NFT platform built with Thirdweb and blockchain integration',
+      'Collaborated with backend developers, designers and project managers',
     ],
   },
   {
-    role: 'Associate Software Engineer',
+    role: 'Associate Software Engineer (Full-Stack)',
     company: 'Intersoft International Solutions (PVT) Ltd.',
-    period: 'Feb 2021 — Oct 2021',
+    period: 'Aug 2020 — Oct 2021',
     location: 'Jaffna, Sri Lanka',
-    stack: ['ASP.NET', 'C#', 'JavaScript', 'jQuery', 'REST API', 'SQL Server'],
-    summary: 'Maintained and enhanced an enterprise .NET application alongside a development team.',
+    stack: ['ASP.NET MVC', 'C#', 'JavaScript', 'jQuery', 'REST API', 'SQL Server'],
+    summary: 'Built and maintained a hospital logistics SaaS application for UK hospitals.',
     points: [
-      'Implemented new features, bug fixes and front-end improvements',
-      'Refactored code and integrated REST APIs',
-      'Collaborated within a team of .NET developers',
+      'Developed features, fixed bugs and optimized UI/UX',
+      'Collaborated with a small development team on the production system',
     ],
   },
   {
-    role: 'Software Engineer Intern',
+    role: 'Software Engineer Intern (Full-Stack)',
     company: 'Intersoft International Solutions (PVT) Ltd.',
-    period: 'Feb 2020 — Jan 2021',
+    period: 'Feb 2020 — Jul 2020',
     location: 'Jaffna, Sri Lanka',
-    stack: ['ASP.NET', 'C#', 'JavaScript', 'jQuery', 'Chart.js', 'SQL Server'],
-    summary: 'Contributed to a logistics management system during an engineering internship.',
+    stack: ['ASP.NET', 'C#', 'JavaScript', 'jQuery', 'SQL Server'],
+    summary: 'Trained and integrated into the company’s production systems.',
     points: [
-      'Maintained and extended the logistics platform',
-      'Built a reporting and analytics web app using Chart.js',
+      'Ramped up on the ASP.NET MVC codebase and internal workflows',
       'Supported QA, bug fixing and UI improvements',
     ],
   },

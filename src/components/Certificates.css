@@ -72,6 +72,9 @@
   letter-spacing: -0.02em;
   line-height: 1.1;
   margin-bottom: 14px;
+  /* reserve space for up to 3 lines so meta/expiry/divider/CTA line up
+     across cards regardless of how long each certificate title is */
+  min-height: 3.3em;
 }
 .cert-card__meta {
   display: flex;

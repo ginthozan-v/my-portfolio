@@ -4,64 +4,64 @@
   z-index: 10000;
   background: var(--bg);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: clamp(16px, 3vw, 28px);
   overflow: hidden;
 }
 
-.pl-g {
-  width: clamp(220px, 42vw, 460px);
-  height: clamp(220px, 42vw, 460px);
-  will-change: transform, opacity;
+/* full name, centered, small, white, medium-bold */
+.pl-name {
+  display: flex;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-family: var(--font-mono, 'Space Mono', monospace);
+  font-weight: 600;
+  font-size: clamp(0.75rem, 1.6vw, 1rem);
+  letter-spacing: 0.22em;
+  color: #ffffff;
+  white-space: nowrap;
 }
-.pl-svg {
+
+.pl-char {
+  display: inline-block;
+  opacity: 0;
+  will-change: opacity;
+}
+
+/* thin progress track under the name */
+.pl-progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.pl-track {
+  width: clamp(90px, 14vw, 140px);
+  height: 1px;
+  background: rgba(244, 244, 240, 0.18);
+  overflow: hidden;
+}
+.pl-track__fill {
+  display: block;
   width: 100%;
   height: 100%;
-  overflow: visible;
+  background: var(--fg);
+  transform: scaleX(0);
+  transform-origin: left center;
 }
 
-.pl-text {
-  font-family: 'Bebas Neue', sans-serif;
-  font-weight: 400;
-  font-size: 360px;
-  letter-spacing: 0;
-}
-
-/* outline of the letter */
-.pl-outline {
-  fill: transparent;
-  stroke: var(--fg);
-  stroke-width: 2px;
-}
-
-/* live 0 → 100 counter, bottom-right */
-.pl-count {
-  position: absolute;
-  right: clamp(20px, 5vw, 64px);
-  bottom: clamp(22px, 4vw, 48px);
+.pl-progress__count {
   font-family: var(--font-mono);
-  font-weight: 700;
-  font-size: clamp(2.4rem, 7vw, 5rem);
-  line-height: 0.8;
-  letter-spacing: -0.03em;
-  color: var(--fg);
+  font-weight: 500;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  color: var(--fg-dim);
 }
-.pl-count sup {
-  font-size: 0.32em;
+.pl-progress__count sup {
+  font-size: 0.85em;
   color: var(--accent);
-  margin-left: 4px;
-  vertical-align: super;
-}
-
-/* the paint that pours in */
-.pl-fill {
-  fill: url(#pl-grad);
-}
-/* glossy meniscus line riding the surface */
-.pl-surface {
-  fill: none;
-  stroke: #f4ffd0;
-  stroke-width: 2.5px;
-  stroke-linecap: round;
-  opacity: 0.9;
+  margin-left: 2px;
 }

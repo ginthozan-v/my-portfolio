@@ -27,7 +27,16 @@ export default function useLenis(enabled = true) {
 
     window.__lenis = lenis
 
+    // By the time this hook runs, the preloader has already confirmed fonts
+    // and the full page load are done — so this is the first point where
+    // every section's real layout (images, the Three.js hero canvas, etc.)
+    // is final. ScrollTriggers created earlier (on each section's mount)
+    // measured positions against the still-settling layout, so refresh once
+    // here to recalculate them all against the real, final page height.
+    const refresh = requestAnimationFrame(() => ScrollTrigger.refresh())
+
     return () => {
+      cancelAnimationFrame(refresh)
       gsap.ticker.remove(raf)
       lenis.destroy()
       window.__lenis = null

@@ -13,7 +13,13 @@ export default function Contact() {
     const ctx = gsap.context(() => {
       gsap.from('.contact-line > *', {
         yPercent: 110, duration: 1, stagger: 0.1, ease: 'power4.out',
-        scrollTrigger: { trigger: '.contact-cta', start: 'top 80%' },
+        // Trigger off the section itself (root.current), not a '.contact'
+        // selector — gsap.context scopes selector text to root's
+        // descendants, and root here IS the .contact section, so that
+        // string never resolves. Starting at 85% (with margin below it)
+        // keeps this well clear of the document's hard scroll limit, since
+        // Contact is the last section on the page.
+        scrollTrigger: { trigger: root.current, start: 'top 85%', once: true },
       })
     }, root)
     return () => ctx.revert()
